@@ -7,6 +7,8 @@
 //
 
 #import "LCQCollectionViewFlowLayout.h"
+#import "shopModel.h"
+
 
 const NSInteger theGap = 10;
 const NSInteger theColumn = 3;
@@ -36,11 +38,7 @@ const UIEdgeInsets theEdgeinset = {20,20,20,20};
     if (!_columnHeightArray )
     {
         _columnHeightArray = [[NSMutableArray alloc]init];
-        
-        for (int i = 0; i<theColumn; i++)
-        {
-            [_columnHeightArray addObject:@(theEdgeinset.top)];
-        }
+
     }
     return _columnHeightArray;
     
@@ -49,6 +47,13 @@ const UIEdgeInsets theEdgeinset = {20,20,20,20};
 -(void)prepareLayout
 {
     [super prepareLayout];
+    
+    [self.columnHeightArray removeAllObjects];
+    
+    for (int i = 0; i<theColumn; i++)
+    {
+        [_columnHeightArray addObject:@(theEdgeinset.top)];
+    }
     
     [self.attributeArray removeAllObjects];
     for (int i = 0; i<[self.collectionView numberOfItemsInSection:0]; i++)
@@ -69,7 +74,8 @@ const UIEdgeInsets theEdgeinset = {20,20,20,20};
     
     CGFloat w = (self.collectionView.frame.size.width - theEdgeinset.left - theEdgeinset.right -(theColumn - 1)*theGap)/theColumn;
     
-    CGFloat h = arc4random_uniform(100)+50;
+    shopModel *tempModel = self.modelArray[indexPath.item];
+    CGFloat h = (w * tempModel.h)/tempModel.w;
     
     NSInteger minHeigtColunm = 0;
     CGFloat currenMinHeigt = [[self.columnHeightArray firstObject]floatValue];

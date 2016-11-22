@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01C5797714B32B823E9A0E5F /* libPods-瀑布流.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EB7C1FCB4042277A7DE775 /* libPods-瀑布流.a */; };
 		256E44811DE3DA3400ADC81B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 256E44801DE3DA3400ADC81B /* main.m */; };
 		256E44841DE3DA3400ADC81B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256E44831DE3DA3400ADC81B /* AppDelegate.m */; };
 		256E44871DE3DA3400ADC81B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256E44861DE3DA3400ADC81B /* ViewController.m */; };
@@ -18,6 +19,12 @@
 		256E44B51DE3DA4400ADC81B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256E44B31DE3DA4400ADC81B /* RootViewController.m */; };
 		256E44B61DE3DA4400ADC81B /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256E44B41DE3DA4400ADC81B /* RootViewController.xib */; };
 		256E44B91DE3DEA500ADC81B /* LCQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 256E44B81DE3DEA500ADC81B /* LCQCollectionViewFlowLayout.m */; };
+		256E44BD1DE416E400ADC81B /* LcqCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 256E44BB1DE416E400ADC81B /* LcqCollectionViewCell.m */; };
+		256E44BE1DE416E400ADC81B /* LcqCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256E44BC1DE416E400ADC81B /* LcqCollectionViewCell.xib */; };
+		256E44C11DE417D700ADC81B /* shopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 256E44C01DE417D700ADC81B /* shopModel.m */; };
+		256E44C31DE4183A00ADC81B /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 256E44C21DE4183A00ADC81B /* 1.plist */; };
+		5E91900942887CF746367148 /* libPods-瀑布流UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 079AC7A52F3187E2C9AEBFA4 /* libPods-瀑布流UITests.a */; };
+		744E8BA2C22D9D5230050A1E /* libPods-瀑布流Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC2F7A0D2785DEA84994AD9A /* libPods-瀑布流Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		079AC7A52F3187E2C9AEBFA4 /* libPods-瀑布流UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-瀑布流UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		256E447C1DE3DA3400ADC81B /* 瀑布流.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "瀑布流.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		256E44801DE3DA3400ADC81B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		256E44821DE3DA3400ADC81B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +67,20 @@
 		256E44B41DE3DA4400ADC81B /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		256E44B71DE3DEA500ADC81B /* LCQCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCQCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		256E44B81DE3DEA500ADC81B /* LCQCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCQCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		256E44BA1DE416E400ADC81B /* LcqCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LcqCollectionViewCell.h; sourceTree = "<group>"; };
+		256E44BB1DE416E400ADC81B /* LcqCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LcqCollectionViewCell.m; sourceTree = "<group>"; };
+		256E44BC1DE416E400ADC81B /* LcqCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LcqCollectionViewCell.xib; sourceTree = "<group>"; };
+		256E44BF1DE417D700ADC81B /* shopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shopModel.h; sourceTree = "<group>"; };
+		256E44C01DE417D700ADC81B /* shopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shopModel.m; sourceTree = "<group>"; };
+		256E44C21DE4183A00ADC81B /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		3C96D79483B152084E7CFAAF /* Pods-瀑布流.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-瀑布流.release.xcconfig"; path = "Pods/Target Support Files/Pods-瀑布流/Pods-瀑布流.release.xcconfig"; sourceTree = "<group>"; };
+		486F8C5F93229BBEF980E1F6 /* Pods-瀑布流UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-瀑布流UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-瀑布流UITests/Pods-瀑布流UITests.release.xcconfig"; sourceTree = "<group>"; };
+		4BE5277761C39C62B84F3F41 /* Pods-瀑布流UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-瀑布流UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-瀑布流UITests/Pods-瀑布流UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		50FEE9DDB9E31390CFC76982 /* Pods-瀑布流.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-瀑布流.debug.xcconfig"; path = "Pods/Target Support Files/Pods-瀑布流/Pods-瀑布流.debug.xcconfig"; sourceTree = "<group>"; };
+		82637A83FF67DFDCA9A363BA /* Pods-瀑布流Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-瀑布流Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-瀑布流Tests/Pods-瀑布流Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A7EB7C1FCB4042277A7DE775 /* libPods-瀑布流.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-瀑布流.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D318AEBE69674A0208466A /* Pods-瀑布流Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-瀑布流Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-瀑布流Tests/Pods-瀑布流Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC2F7A0D2785DEA84994AD9A /* libPods-瀑布流Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-瀑布流Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C5797714B32B823E9A0E5F /* libPods-瀑布流.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				744E8BA2C22D9D5230050A1E /* libPods-瀑布流Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E91900942887CF746367148 /* libPods-瀑布流UITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +118,8 @@
 				256E44981DE3DA3500ADC81B /* 瀑布流Tests */,
 				256E44A31DE3DA3500ADC81B /* 瀑布流UITests */,
 				256E447D1DE3DA3400ADC81B /* Products */,
+				D4935A03D904086170CF9632 /* Pods */,
+				E7BAE9055C2D96EDC64CBCD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +150,12 @@
 				256E44B41DE3DA4400ADC81B /* RootViewController.xib */,
 				256E44B71DE3DEA500ADC81B /* LCQCollectionViewFlowLayout.h */,
 				256E44B81DE3DEA500ADC81B /* LCQCollectionViewFlowLayout.m */,
+				256E44BA1DE416E400ADC81B /* LcqCollectionViewCell.h */,
+				256E44BB1DE416E400ADC81B /* LcqCollectionViewCell.m */,
+				256E44BC1DE416E400ADC81B /* LcqCollectionViewCell.xib */,
+				256E44BF1DE417D700ADC81B /* shopModel.h */,
+				256E44C01DE417D700ADC81B /* shopModel.m */,
+				256E44C21DE4183A00ADC81B /* 1.plist */,
 			);
 			path = "瀑布流";
 			sourceTree = "<group>";
@@ -153,6 +186,29 @@
 			path = "瀑布流UITests";
 			sourceTree = "<group>";
 		};
+		D4935A03D904086170CF9632 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50FEE9DDB9E31390CFC76982 /* Pods-瀑布流.debug.xcconfig */,
+				3C96D79483B152084E7CFAAF /* Pods-瀑布流.release.xcconfig */,
+				E1D318AEBE69674A0208466A /* Pods-瀑布流Tests.debug.xcconfig */,
+				82637A83FF67DFDCA9A363BA /* Pods-瀑布流Tests.release.xcconfig */,
+				4BE5277761C39C62B84F3F41 /* Pods-瀑布流UITests.debug.xcconfig */,
+				486F8C5F93229BBEF980E1F6 /* Pods-瀑布流UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E7BAE9055C2D96EDC64CBCD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7EB7C1FCB4042277A7DE775 /* libPods-瀑布流.a */,
+				EC2F7A0D2785DEA84994AD9A /* libPods-瀑布流Tests.a */,
+				079AC7A52F3187E2C9AEBFA4 /* libPods-瀑布流UITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 256E44A91DE3DA3500ADC81B /* Build configuration list for PBXNativeTarget "瀑布流" */;
 			buildPhases = (
+				D43EAF2E0B175DD378BB1B52 /* [CP] Check Pods Manifest.lock */,
 				256E44781DE3DA3400ADC81B /* Sources */,
 				256E44791DE3DA3400ADC81B /* Frameworks */,
 				256E447A1DE3DA3400ADC81B /* Resources */,
+				5533151F73C1F8DA93270B57 /* [CP] Embed Pods Frameworks */,
+				97F76E596AE1AF1B98D0A31A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 256E44AC1DE3DA3500ADC81B /* Build configuration list for PBXNativeTarget "瀑布流Tests" */;
 			buildPhases = (
+				9A8A9BEEBD65EA0032612217 /* [CP] Check Pods Manifest.lock */,
 				256E44911DE3DA3500ADC81B /* Sources */,
 				256E44921DE3DA3500ADC81B /* Frameworks */,
 				256E44931DE3DA3500ADC81B /* Resources */,
+				461DCE0A5655A42B8B7ED8D4 /* [CP] Embed Pods Frameworks */,
+				CC3BF7BDBD6A7F72F7316C43 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,9 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 256E44AF1DE3DA3500ADC81B /* Build configuration list for PBXNativeTarget "瀑布流UITests" */;
 			buildPhases = (
+				618C707D383B60F5CFF1C4D3 /* [CP] Check Pods Manifest.lock */,
 				256E449C1DE3DA3500ADC81B /* Sources */,
 				256E449D1DE3DA3500ADC81B /* Frameworks */,
 				256E449E1DE3DA3500ADC81B /* Resources */,
+				12D5418E0AD02F4570E3ABDB /* [CP] Embed Pods Frameworks */,
+				1C2AB0CE0FAC56F6B09B7403 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,10 +324,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256E44C31DE4183A00ADC81B /* 1.plist in Resources */,
 				256E448F1DE3DA3400ADC81B /* LaunchScreen.storyboard in Resources */,
 				256E448C1DE3DA3400ADC81B /* Assets.xcassets in Resources */,
 				256E44B61DE3DA4400ADC81B /* RootViewController.xib in Resources */,
 				256E448A1DE3DA3400ADC81B /* Main.storyboard in Resources */,
+				256E44BE1DE416E400ADC81B /* LcqCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +349,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12D5418E0AD02F4570E3ABDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-瀑布流UITests/Pods-瀑布流UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C2AB0CE0FAC56F6B09B7403 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-瀑布流UITests/Pods-瀑布流UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		461DCE0A5655A42B8B7ED8D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-瀑布流Tests/Pods-瀑布流Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5533151F73C1F8DA93270B57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-瀑布流/Pods-瀑布流-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		618C707D383B60F5CFF1C4D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97F76E596AE1AF1B98D0A31A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-瀑布流/Pods-瀑布流-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A8A9BEEBD65EA0032612217 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC3BF7BDBD6A7F72F7316C43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-瀑布流Tests/Pods-瀑布流Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D43EAF2E0B175DD378BB1B52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		256E44781DE3DA3400ADC81B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -292,6 +497,8 @@
 				256E44841DE3DA3400ADC81B /* AppDelegate.m in Sources */,
 				256E44B51DE3DA4400ADC81B /* RootViewController.m in Sources */,
 				256E44811DE3DA3400ADC81B /* main.m in Sources */,
+				256E44C11DE417D700ADC81B /* shopModel.m in Sources */,
+				256E44BD1DE416E400ADC81B /* LcqCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +643,7 @@
 		};
 		256E44AA1DE3DA3500ADC81B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50FEE9DDB9E31390CFC76982 /* Pods-瀑布流.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "瀑布流/Info.plist";
@@ -447,6 +655,7 @@
 		};
 		256E44AB1DE3DA3500ADC81B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C96D79483B152084E7CFAAF /* Pods-瀑布流.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "瀑布流/Info.plist";
@@ -458,6 +667,7 @@
 		};
 		256E44AD1DE3DA3500ADC81B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1D318AEBE69674A0208466A /* Pods-瀑布流Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "瀑布流Tests/Info.plist";
@@ -470,6 +680,7 @@
 		};
 		256E44AE1DE3DA3500ADC81B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82637A83FF67DFDCA9A363BA /* Pods-瀑布流Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "瀑布流Tests/Info.plist";
@@ -482,6 +693,7 @@
 		};
 		256E44B01DE3DA3500ADC81B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BE5277761C39C62B84F3F41 /* Pods-瀑布流UITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "瀑布流UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -493,6 +705,7 @@
 		};
 		256E44B11DE3DA3500ADC81B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 486F8C5F93229BBEF980E1F6 /* Pods-瀑布流UITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "瀑布流UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -521,6 +734,7 @@
 				256E44AB1DE3DA3500ADC81B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		256E44AC1DE3DA3500ADC81B /* Build configuration list for PBXNativeTarget "瀑布流Tests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +743,7 @@
 				256E44AE1DE3DA3500ADC81B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		256E44AF1DE3DA3500ADC81B /* Build configuration list for PBXNativeTarget "瀑布流UITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +752,7 @@
 				256E44B11DE3DA3500ADC81B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

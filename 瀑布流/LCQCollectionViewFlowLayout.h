@@ -10,4 +10,6 @@
 
 @interface LCQCollectionViewFlowLayout : UICollectionViewLayout
 
+@property (nonatomic,strong) NSArray *modelArray;
+
 @end
