@@ -7,9 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+@class LCQCollectionViewFlowLayout;
+
+@protocol LCQCollectionViewFlowLayoutDelegate <NSObject>
+
+@required
+- (CGFloat)flowLayout:(LCQCollectionViewFlowLayout *)flowLayout heightForItemAtIndex:(NSInteger)index withWidth:(CGFloat)width;
+@optional
+
+
+@end
+
+
+
 
 @interface LCQCollectionViewFlowLayout : UICollectionViewLayout
 
-@property (nonatomic,strong) NSArray *modelArray;
+@property (nonatomic,weak) id<LCQCollectionViewFlowLayoutDelegate> delegate;
+
 
 @end

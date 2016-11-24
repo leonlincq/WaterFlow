@@ -13,13 +13,11 @@
 #import "shopModel.h"
 #import <MJExtension.h>
 
-@interface RootViewController ()<UICollectionViewDataSource>
+@interface RootViewController ()<UICollectionViewDataSource,LCQCollectionViewFlowLayoutDelegate>
 
 @property (nonatomic,strong) UICollectionView *myCollectionView;
 
 @property (nonatomic,strong) NSMutableArray *modelArray;
-
-@property (nonatomic,strong) LCQCollectionViewFlowLayout *myFlow;
 
 @end
 
@@ -50,18 +48,19 @@ static NSString *itemID = @"myItemID";
 {
     self.myCollectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
     
+    [self.myCollectionView.mj_header beginRefreshing];
+    
     self.myCollectionView.mj_footer = [MJRefreshAutoFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
 }
 
 -(void)loadNewData
 {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
        
         NSString *path = [[NSBundle mainBundle]pathForResource:@"1" ofType:@"plist"];
         
         self.modelArray = [NSMutableArray arrayWithArray:[shopModel mj_objectArrayWithFile:path]];
         
-        self.myFlow.modelArray = self.modelArray;
         [self.myCollectionView.mj_header endRefreshing];
         [self.myCollectionView reloadData];
 
@@ -73,8 +72,7 @@ static NSString *itemID = @"myItemID";
 {
     NSString *path = [[NSBundle mainBundle]pathForResource:@"1" ofType:@"plist"];
     [self.modelArray addObjectsFromArray:[shopModel mj_objectArrayWithFile:path]];
-    
-    self.myFlow.modelArray = self.modelArray;
+
     [self.myCollectionView.mj_footer endRefreshing];
     [self.myCollectionView reloadData];
 }
@@ -91,7 +89,7 @@ static NSString *itemID = @"myItemID";
 #else
     
     LCQCollectionViewFlowLayout *flow = [[LCQCollectionViewFlowLayout alloc]init];
-    self.myFlow = flow;
+    flow.delegate = self;
 #endif
 
     UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:[UIScreen mainScreen].bounds collectionViewLayout:flow];
@@ -140,7 +138,12 @@ static NSString *itemID = @"myItemID";
     return itemCell;
 }
 
-
+- (CGFloat)flowLayout:(LCQCollectionViewFlowLayout *)flowLayout heightForItemAtIndex:(NSInteger)index withWidth:(CGFloat)width
+{
+    shopModel *tempModel = self.modelArray[index];
+    CGFloat h = (width * tempModel.h)/tempModel.w;
+    return h;
+}
 
 
 

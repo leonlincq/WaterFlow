@@ -74,8 +74,8 @@ const UIEdgeInsets theEdgeinset = {20,20,20,20};
     
     CGFloat w = (self.collectionView.frame.size.width - theEdgeinset.left - theEdgeinset.right -(theColumn - 1)*theGap)/theColumn;
     
-    shopModel *tempModel = self.modelArray[indexPath.item];
-    CGFloat h = (w * tempModel.h)/tempModel.w;
+    CGFloat h = [self.delegate flowLayout:self heightForItemAtIndex:indexPath.item withWidth:w];
+    
     
     NSInteger minHeigtColunm = 0;
     CGFloat currenMinHeigt = [[self.columnHeightArray firstObject]floatValue];
